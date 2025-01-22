@@ -50,7 +50,7 @@ export default function Navigation() {
     if (path === '/') {
       return pathname === path;
     }
-    return pathname.startsWith(path);
+    return pathname?.startsWith(path) ?? false;
   };
 
   const handleNavClick = (item: NavItem, event: React.MouseEvent) => {

@@ -9,7 +9,7 @@ import { NavItem } from '@/types';
 export default function SubMenuPage() {
   const params = useParams();
   const searchParams = useSearchParams();
-  const parentName = searchParams.get('parentName');
+  const parentName = searchParams?.get('parentName') ?? '';
   
   const { data: navigationData } = useQuery<{ navItems: NavItem[] }>({
     queryKey: ['navigation'],
@@ -18,9 +18,8 @@ export default function SubMenuPage() {
       return data;
     },
   });
-
   const parentItem = navigationData?.navItems.find(
-    item => item.id.toString() === params.id
+    item => item.id.toString() === params?.id
   );
 
   return (

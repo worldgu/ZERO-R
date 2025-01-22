@@ -4,7 +4,7 @@ import { NavItem } from '@/types';
 
 const SubMenuPage = () => {
   const searchParams = useSearchParams();
-  const parentName = searchParams.get('parentName');
+  const parentName = searchParams?.get('parentName');
   
   const { data: navigationData } = useQuery<{ navItems: NavItem[] }>({
     queryKey: ['navigation'],
