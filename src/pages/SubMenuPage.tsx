@@ -1,18 +1,25 @@
 import { useSearchParams } from 'next/navigation';
-import { useQuery } from '@tanstack/react-query';
+import { GetStaticProps } from 'next';
 import { NavItem } from '@/types';
 
-const SubMenuPage = () => {
+interface SubMenuPageProps {
+  navigationData: {
+    navItems: NavItem[];
+  };
+}
+
+export const getStaticProps: GetStaticProps<SubMenuPageProps> = async () => {
+  const navigationData = await import('@/data/navigation.json');
+  return {
+    props: {
+      navigationData,
+    },
+  };
+};
+
+const SubMenuPage = ({ navigationData }: SubMenuPageProps) => {
   const searchParams = useSearchParams();
   const parentName = searchParams?.get('parentName');
-  
-  const { data: navigationData } = useQuery<{ navItems: NavItem[] }>({
-    queryKey: ['navigation'],
-    queryFn: async () => {
-      const data = await import('@/data/navigation.json');
-      return data;
-    },
-  });
 
   return (
     <div className="submenu-page">
