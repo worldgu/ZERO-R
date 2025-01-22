@@ -6,11 +6,11 @@ import { Article } from '@/types';
 import Link from 'next/link';
 
 export default function RecommendedArticles() {
-  const { data: articles = [] } = useQuery<Article[]>({
-    queryKey: ['recommended-articles'],
+  const { data: articles = [] } = useQuery({
+    queryKey: ['recommended-articles'] as const,
     queryFn: async () => {
       const articles = (await import('@/data/articles.json')).default;
-      return articles;
+      return articles as Article[];
     },
   });
 
