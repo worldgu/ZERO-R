@@ -1,6 +1,7 @@
 import { useSearchParams } from 'next/navigation';
 import { GetStaticProps } from 'next';
 import { NavItem } from '@/types';
+import navigationData from '@/data/navigation.json';
 
 interface SubMenuPageProps {
   navigationData: {
@@ -9,10 +10,11 @@ interface SubMenuPageProps {
 }
 
 export const getStaticProps: GetStaticProps<SubMenuPageProps> = async () => {
-  const navigationData = await import('@/data/navigation.json');
   return {
     props: {
-      navigationData,
+      navigationData: {
+        navItems: navigationData.navItems
+      },
     },
   };
 };
