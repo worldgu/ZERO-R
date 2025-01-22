@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "id": "ai-news",
+      "name": "AI快讯",
+      "icon": "newspaper",
+      "items": [
+        {
+          "id": "daily-ai",
+          "title": "每日AI快讯",
+          "description": "最新AI资讯动态",
+          "image": "/images/daily-ai.png",
+          "link": "https://example.com/daily-ai"
+        }
+      ]
+    },
+    {
+      "id": "ai-tools",
+      "name": "热门工具",
+      "icon": "tools",
+      "items": [
+        {
+          "id": "zhipu",
+          "title": "智谱清言",
+          "description": "免费全能的AI助手，支持多种场景",
+          "image": "/icons/zhipu.png",
+          "link": "https://example.com/zhipu"
+        },
+        {
+          "id": "doubao",
+          "title": "豆包",
+          "description": "字节推出的AI智能助手",
+          "image": "/icons/doubao.png",
+          "link": "https://example.com/doubao"
+        }
+      ]
+    }
+  ],
+  "searchEngines": [
+    {
+      "name": "站内",
+      "url": "/search?q="
+    },
+    {
+      "name": "Bing",
+      "url": "https://www.bing.com/search?q="
+    },
+    {
+      "name": "百度",
+      "url": "https://www.baidu.com/s?wd="
+    },
+    {
+      "name": "Google",
+      "url": "https://www.google.com/search?q="
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/search?q="
+    }
+  ]
+} 

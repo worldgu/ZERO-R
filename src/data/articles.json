@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "code": "welcome",
+    "title": "Welcome to My Website",
+    "subtitle": "A brief introduction",
+    "content": "Welcome to my personal website. Here you'll find my thoughts, projects, and more.",
+    "tags": ["welcome", "introduction"],
+    "status": "published",
+    "type": "text",
+    "createdAt": "2023-10-15T00:00:00Z",
+    "updatedAt": "2023-10-15T00:00:00Z"
+  },
+  {
+    "id": "2",
+    "code": "first-project",
+    "title": "My First Project",
+    "subtitle": "A journey into web development",
+    "content": "This is the story of my first web development project.",
+    "tags": ["web", "development", "project"],
+    "status": "published",
+    "type": "mixed",
+    "createdAt": "2023-10-16T00:00:00Z",
+    "updatedAt": "2023-10-16T00:00:00Z"
+  },
+  {
+    "id": "3",
+    "code": "photo-gallery",
+    "title": "Photo Gallery",
+    "subtitle": "A collection of my favorite photos",
+    "content": "A showcase of my photography work.",
+    "tags": ["photography", "gallery"],
+    "status": "published",
+    "type": "image",
+    "createdAt": "2023-10-17T00:00:00Z",
+    "updatedAt": "2023-10-17T00:00:00Z"
+  }
+]

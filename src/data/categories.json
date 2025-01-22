@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "code": "blog",
+    "name": "Blog",
+    "level": 1,
+    "route": "/blog",
+    "navPath": "/blog",
+    "hierarchy": 1,
+    "type": "nav",
+    "description": "Blog posts and articles",
+    "order": 1,
+    "isEnabled": true,
+    "isDeleted": false
+  },
+  {
+    "id": "2",
+    "code": "portfolio",
+    "name": "Portfolio",
+    "level": 1,
+    "route": "/portfolio",
+    "navPath": "/portfolio",
+    "hierarchy": 1,
+    "type": "nav",
+    "description": "Portfolio projects",
+    "order": 2,
+    "isEnabled": true,
+    "isDeleted": false
+  },
+  {
+    "id": "3",
+    "code": "tools",
+    "name": "Tools",
+    "level": 1,
+    "route": "/tools",
+    "navPath": "/tools",
+    "hierarchy": 1,
+    "type": "nav",
+    "description": "Useful tools and utilities",
+    "order": 3,
+    "isEnabled": true,
+    "isDeleted": false
+  }
+]

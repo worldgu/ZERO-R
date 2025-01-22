@@ -1,0 +1,56 @@
+{
+  "navItems": [
+    {
+      "id": 1,
+      "name": "首页",
+      "path": "/",
+      "children": []
+    },
+    {
+      "id": 2,
+      "name": "关于我",
+      "path": "/about",
+      "children": []
+    },
+    {
+      "id": 3,
+      "name": "文章",
+      "path": "/articles",
+      "children": [
+        {
+          "id": 31,
+          "name": "技术分享",
+          "path": "/articles/tech"
+        },
+        {
+          "id": 32,
+          "name": "生活感悟",
+          "path": "/articles/life"
+        },
+        {
+          "id": 33,
+          "name": "旅行记录",
+          "path": "/articles/travel"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "工具",
+      "path": "/tools",
+      "children": [
+        {
+          "id": 41,
+          "name": "AI工具",
+          "path": "/tools/ai"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "联系我",
+      "path": "/contact",
+      "children": []
+    }
+  ]
+}
