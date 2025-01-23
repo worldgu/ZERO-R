@@ -14,15 +14,20 @@ import { ArticleDetail } from '@/types';
 
 export default function ArticleDetailPage() {
   const params = useParams();
-  const { category, slug } = params;
+  const category = params?.category as string;
+  const slug = params?.slug as string;
 
-  const { data: article } = useQuery<ArticleDetail>({
-    queryKey: ['article', slug],
+  const { data: article } = useQuery({
+    queryKey: ['article', slug] as const,
     queryFn: async () => {
       const data = await import('@/data/articles-data.json');
-      return data.articles.find(
+      const article = data.articles.find(
         article => article.category === category && article.slug === slug
       );
+      if (!article) {
+        throw new Error('Article not found');
+      }
+      return article as ArticleDetail;
     },
   });
 

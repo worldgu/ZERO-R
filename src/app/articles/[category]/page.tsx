@@ -17,13 +17,16 @@ import { ArticleDetail } from '@/types';
 
 export default function ArticleListPage() {
   const params = useParams();
-  const category = params.category as string;
+  const category = params?.category as string;
 
-  const { data: articles } = useQuery<ArticleDetail[]>({
-    queryKey: ['articles', category],
+  const { data: articles } = useQuery({
+    queryKey: ['articles', category] as const,
     queryFn: async () => {
       const data = await import('@/data/articles-data.json');
-      return data.articles.filter(article => article.category === category);
+      const filteredArticles = data.articles.filter(
+        article => article.category === category
+      );
+      return filteredArticles as ArticleDetail[];
     },
   });
 
