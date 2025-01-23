@@ -48,3 +48,16 @@ export interface NavItem {
   path: string;
   children?: NavItem[];
 }
+
+export interface ArticleDetail {
+  id: string;
+  title: string;
+  author: string;
+  createdAt: string;
+  eventDate: string;
+  coverImage: string;
+  content: string;
+  tags: string[];
+  category: string;
+  slug: string;
+}

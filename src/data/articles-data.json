@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "id": "tech-1",
+      "title": "我的第一个Next.js项目经历",
+      "author": "张三",
+      "createdAt": "2024-03-20T08:00:00Z",
+      "eventDate": "2024-03-15",
+      "coverImage": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      "content": "作为一名前端开发者，我最近完成了我的第一个Next.js项目。这个过程充满了挑战和收获...",
+      "tags": ["Next.js", "React", "Web开发"],
+      "category": "tech",
+      "slug": "my-first-nextjs-project"
+    },
+    {
+      "id": "life-1",
+      "title": "咖啡馆的一次偶遇",
+      "author": "李四",
+      "createdAt": "2024-03-18T10:30:00Z",
+      "eventDate": "2024-03-18",
+      "coverImage": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+      "content": "今天在常去的咖啡馆，遇到了一位有趣的老人...",
+      "tags": ["生活", "咖啡", "偶遇"],
+      "category": "life",
+      "slug": "coffee-shop-encounter"
+    },
+    {
+      "id": "travel-1",
+      "title": "云南之旅：遇见丽江古城",
+      "author": "王五",
+      "createdAt": "2024-03-15T15:20:00Z",
+      "eventDate": "2024-02-20",
+      "coverImage": "https://images.unsplash.com/photo-1558682875-1ecc8f27b8f1",
+      "content": "二月的丽江，依旧保持着它的神秘与美丽...",
+      "tags": ["旅行", "丽江", "古城"],
+      "category": "travel",
+      "slug": "lijiang-ancient-city"
+    }
+  ]
+} 
